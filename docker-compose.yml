@@ -16,7 +16,7 @@ services:
     command: ./etc/extra-config/grafana/post.sh
   # we will use postgres as datasource.
   postgres:
-    image: postgres:9.6.6
+    image: postgres:10.19-bullseye
     environment:
       POSTGRES_USER: postgres     # define credentials
       POSTGRES_PASSWORD: postgres # define credentials
